@@ -1,0 +1,19 @@
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: medium solid black;
+  border-radius: 10px;
+  height: 30vh;
+  width: 30%;
+}
+
+.margin {
+  margin: 1vh 0;
+}

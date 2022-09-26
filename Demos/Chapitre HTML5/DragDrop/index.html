@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Glisser Déposer</title>
+  </head>
+  <body>
+    <h1>Glisser l'image dans la bonne case</h1>
+    <div
+      class="box margin"
+      ondragover="handleDragOver(event)"
+      ondrop="handleDrop(event)"
+    >
+      <img
+        id="logo"
+        src="./images/Firefox_logo.png"
+        draggable="true"
+        ondragstart="handleDragStart(event)"
+      />
+    </div>
+
+    <div class="flexbox">
+      <div
+        class="box"
+        ondrop="handleDrop(event)"
+        ondragover="handleDragOver(event)"
+      ></div>
+      <div
+        class="box"
+        ondrop="handleDrop(event)"
+        ondragover="handleDragOver(event)"
+      ></div>
+      <div
+        class="box"
+        ondrop="handleDrop(event)"
+        ondragover="handleDragOver(event)"
+      ></div>
+    </div>
+  </body>
+</html>
