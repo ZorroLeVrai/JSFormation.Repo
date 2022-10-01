@@ -1,0 +1,1 @@
+{"version":3,"file":"settingsModel.js","sourceRoot":"","sources":["../../src/Settings/settingsModel.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,aAAa;IAExB,YAAmB,QAAkB,EAAS,SAAiB,EAAS,UAAmB;QAAxE,aAAQ,GAAR,QAAQ,CAAU;QAAS,cAAS,GAAT,SAAS,CAAQ;QAAS,eAAU,GAAV,UAAU,CAAS;IAE3F,CAAC;CACF"}

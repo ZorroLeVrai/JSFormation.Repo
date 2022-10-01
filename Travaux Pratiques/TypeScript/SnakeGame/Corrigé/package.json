@@ -1,0 +1,16 @@
+{
+  "name": "snakegame",
+  "version": "1.0.0",
+  "description": "Jeu du Serpent",
+  "main": "./output/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./output/index.js"
+  },
+  "keywords": [
+    "Snake",
+    "Game"
+  ],
+  "author": "Amine BELBAHAR",
+  "license": "ISC"
+}

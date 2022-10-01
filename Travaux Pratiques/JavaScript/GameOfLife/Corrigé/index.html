@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="./output/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Game Of Life</title>
+  </head>
+  <body>
+    <div class="flex-column height-100pc">
+      <div class="flex-mincolumn-maxrow flex-fixed" id="commandMenu">
+        <div class="flex-expanded moderate-margin">
+          <label for="nb-rows">Nb de lignes</label>
+          <input id="nb-rows" type="text" />
+        </div>
+
+        <div class="flex-expanded moderate-margin">
+          <label for="nb-columns">Nb de colonnes</label>
+          <input id="nb-columns" type="text" />
+        </div>
+
+        <div class="flex-expanded moderate-margin">
+          <label for="generation-interval">Interval en ms</label>
+          <input id="generation-interval" type="text" />
+        </div>
+
+        <div class="flex-expanded moderate-margin">
+          <input id="editable" type="checkbox" />
+          <label for="editable">Mode editable</label>
+        </div>
+
+        <button id="start-button" class="flex-expanded moderate-margin">
+          Démarrer
+        </button>
+
+        <button
+          id="next-generation-button"
+          class="flex-expanded moderate-margin"
+        >
+          Génération suivante
+        </button>
+
+        <button id="pause-button" class="flex-expanded moderate-margin">
+          Pause
+        </button>
+
+        <button id="init-button" class="flex-expanded moderate-margin">
+          Initialiser
+        </button>
+      </div>
+      <div class="mainDrawing">
+        <canvas id="mainCanvas"> </canvas>
+      </div>
+
+      <div
+        id="settings-form"
+        class="absolute-center front-1 background-lightgrey flex-column removed"
+      >
+        <div class="flex-row flex-fixed background-grey padding-02rem">
+          <span class="centered flex-expanded">A Star Settings</span>
+          <div
+            id="cancel-settings"
+            class="flex-fixed thin-border default-cursor"
+          >
+            X
+          </div>
+        </div>
+        <div class="flex-expanded">
+          <div class="gridbox-4-2">
+            <label class="padding-02rem margin-02rem" for="nb-rows"
+              >Number of rows (10-100)</label
+            >
+            <input
+              class="padding-02rem margin-02rem"
+              id="nb-rows"
+              type="number"
+              min="10"
+              max="100"
+            />
+            <label class="padding-02rem margin-02rem" for="nb-columns"
+              >Number of columns (10-100)</label
+            >
+            <input
+              class="padding-02rem margin-02rem"
+              id="nb-columns"
+              type="number"
+              min="10"
+              max="100"
+            />
+            <div class="padding-02rem margin-02rem">
+              <input id="use-heuristic" type="checkbox" />
+              <label for="use-heuristic">Use Heuristic</label>
+            </div>
+            <div></div>
+            <div class="padding-02rem margin-02rem">
+              <input id="use-delay" type="checkbox" />
+              <label for="use-delay">Set Delay in ms (1-1000)</label>
+            </div>
+            <input
+              class="padding-02rem margin-02rem"
+              id="nb-delay"
+              type="number"
+              min="1"
+              max="1000"
+              disabled
+            />
+          </div>
+          <div class="padding-02rem margin-02rem">
+            <label id="show-warning" class="warning-msg hidden"
+              >Changing the grid size will initialize the whole grid!</label
+            >
+          </div>
+        </div>
+        <div
+          class="flex-row flex-centered flex-fixed padding-02rem margin-02rem"
+        >
+          <button id="commit-settings">OK</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

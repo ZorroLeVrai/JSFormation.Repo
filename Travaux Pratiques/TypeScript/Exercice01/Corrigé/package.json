@@ -1,0 +1,13 @@
+{
+  "name": "exercice01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./output/index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "start": "node ./output/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

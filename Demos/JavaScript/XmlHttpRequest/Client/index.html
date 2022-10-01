@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Using XmlHttpRequest</title>
+  </head>
+  <body>
+    <p>Cliquer sur le bouton pour afficher le contenu</p>
+    <div class="horizontalFlex">
+      <div>
+        <button onclick="handleXhr()">XmlHttpRequest</button>
+      </div>
+      <div>
+        <button onclick="handleFetch()">Fetch</button>
+      </div>
+      <div>
+        <button onclick="handleEmpty()">Empty</button>
+      </div>
+    </div>
+    <div id="content"></div>
+  </body>
+</html>

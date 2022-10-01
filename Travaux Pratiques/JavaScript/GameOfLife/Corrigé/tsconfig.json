@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["ES6", "ES7", "dom"],
+    "target": "ES6",
+    "rootDir": "./src",
+    "outDir": "./output",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "watch": false
+  }
+}
