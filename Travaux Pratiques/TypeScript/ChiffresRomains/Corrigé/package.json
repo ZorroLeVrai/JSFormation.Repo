@@ -1,0 +1,24 @@
+{
+  "name": "romannumbersconverter",
+  "version": "1.0.0",
+  "description": "Convertisseur chiffres romains",
+  "main": "./src/script.ts",
+  "scripts": {
+    "test": "jest",
+    "start": "ts-node .",
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "keywords": [
+    "Roman",
+    "Numbers",
+    "Converter"
+  ],
+  "author": "Amine BELBAHAR",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.1.1",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1"
+  }
+}

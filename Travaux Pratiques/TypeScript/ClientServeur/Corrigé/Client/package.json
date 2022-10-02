@@ -1,0 +1,13 @@
+{
+  "name": "clientexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node ./src/script.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
