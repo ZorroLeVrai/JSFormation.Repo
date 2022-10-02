@@ -1,0 +1,15 @@
+{
+  "name": "recherchedanstableau",
+  "version": "1.0.0",
+  "description": "rechercher un élément dans un tableau",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ."
+  },
+  "author": "Amine BELBAHAR",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
