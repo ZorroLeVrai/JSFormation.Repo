@@ -54,8 +54,11 @@ function effacerContenu() {
 function afficherContenu(data) {
   afficherLigne(`Prénom: ${data.fname}`);
   afficherLigne(`Nom: ${data.lname}`);
-  afficherLigne(`Téléphone: ${data.phone}`);
-  afficherLigne(`email: ${data.email}`);
+
+  if(data.phone)
+    afficherLigne(`Téléphone: ${data.phone}`);
+  if (data.email)
+    afficherLigne(`email: ${data.email}`);
 }
 
 function afficherErreur(error) {
@@ -64,6 +67,9 @@ function afficherErreur(error) {
 }
 
 function afficherLigne(text) {
+  if (text === undefined)
+    return;
+
   const paraElement = document.createElement("p");
   const textNodeElement = document.createTextNode(text);
   paraElement.appendChild(textNodeElement);

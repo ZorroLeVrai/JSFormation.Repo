@@ -1,0 +1,8 @@
+.horizontalFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  margin: 2px 2px;
+}
