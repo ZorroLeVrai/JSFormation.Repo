@@ -5,3 +5,11 @@
 .big-font {
   font-size: 2rem;
 }
+
+.color-blue {
+  color: blue;
+}
+
+.hidden {
+  display: none;
+}

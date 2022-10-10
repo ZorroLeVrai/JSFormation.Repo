@@ -1,9 +1,22 @@
+//const Joi = require("joi");
+
 const formElement = document.getElementById("formulaire");
 const prenomElement = document.getElementById("fname");
 const nomElement = document.getElementById("lname");
 const phoneElement = document.getElementById("phone");
 const emailElement = document.getElementById("email");
 const outputElement = document.getElementById("output");
+
+const schema = Joi.object({
+  username: Joi.string()
+      .alphanum()
+      .min(3)
+      .max(5)
+      .required()
+});
+
+const joiResult = schema.validate({username: "tt"} );
+console.log(joiResult);
 
 formElement.onsubmit = (event) => submitForm(event);
 

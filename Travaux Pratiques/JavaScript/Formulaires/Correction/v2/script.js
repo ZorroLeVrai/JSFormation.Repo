@@ -9,7 +9,12 @@ formElement.onsubmit = (event) => submitForm(event);
 
 function submitForm(event) {
   event.preventDefault();
+  effacerContenu();
   afficherContenu();
+}
+
+function effacerContenu() {
+  outputElement.innerHTML = "";
 }
 
 function afficherContenu() {

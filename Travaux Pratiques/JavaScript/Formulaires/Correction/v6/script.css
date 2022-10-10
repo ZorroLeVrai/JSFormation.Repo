@@ -1,0 +1,36 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0 0;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0 0.5rem;
+  margin: 10rem;
+}
+
+.width-50percent {
+  width: 50%;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.column-span-2 {
+  grid-column: auto / span 2;
+}
+
+.left {
+  text-align: left;
+}
+
+form * {
+  margin: 0.25rem 0;
+}

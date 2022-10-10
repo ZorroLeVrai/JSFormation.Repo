@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script defer src="./script.js"></script> -->
+    <script defer src="./Joi.js"></script>
+    <script defer src="./script.js" type="module"></script>
     <link rel="stylesheet" href="./script.css" />
     <title>Compteur</title>
   </head>
   <body id="content">
     <p class="center">Formulaire à compléter</p>
-    <form id="formulaire" class="grid-2-columns width-50percent">
+    <form id="formulaire" class="grid-2-columns width-50percent" action="">
       <label for="fname">Prénom:</label>
       <input type="text" id="fname" name="fname" />
       <label for="lname">Nom de famille:</label>
@@ -19,6 +20,10 @@
       <input type="text" id="phone" name="phone" />
       <label for="email">Email:</label>
       <input type="text" id="email" name="email" />
+      <div class="column-span-2">
+        <input class="left" type="checkbox" id="condition" name="condition" />
+        <label for="condition">Accepter les conditions</label>
+      </div>
       <input type="submit" class="column-span-2" />
     </form>
     <p>Récapitulatif des données entrées</p>
